@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGTU Panel</title>
+    <meta name="description" content="Student Marksheet Verification — Sikkim Global Technical University" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(180deg, #dce9f9 0%, #eaf1fb 100%);
+            color: #212529;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 16px 60px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 680px;
+            background: #ffffff;
+            border: 1px solid #d6d6d6;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 32px 28px 36px;
+        }
+
+        .card h1 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            letter-spacing: 0.2px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #c8c8c8;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        .info-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .info-table td {
+            padding: 14px 16px;
+            font-size: 15px;
+            line-height: 1.45;
+            vertical-align: top;
+            border: 1px solid #d9d9d9;
+        }
+
+        .info-table td.label {
+            width: 200px;
+            font-weight: 700;
+            color: #1a1a1a;
+            background: #fafafa;
+            white-space: nowrap;
+        }
+
+        .info-table td.value {
+            color: #2c2c2c;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 520px) {
+            .card {
+                padding: 20px 14px 24px;
+            }
+
+            .card h1 {
+                font-size: 18px;
+            }
+
+            .info-table td.label {
+                width: 140px;
+                font-size: 13px;
+            }
+
+            .info-table td.value {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Student Marksheet Verification</h1>
+
+        <table class="info-table">
+            <tbody>
+                <tr>
+                    <td class="label">Student Name</td>
+                    <td class="value">SANJAY KUMAR</td>
+                </tr>
+                <tr>
+                    <td class="label">Father Name</td>
+                    <td class="value">PRADIP KUMAR</td>
+                </tr>
+                <tr>
+                    <td class="label">Enrollment Number</td>
+                    <td class="value">2025800163970938</td>
+                </tr>
+                <tr>
+                    <td class="label">Course</td>
+                    <td class="value">BACHELOR OF LIBRARY AND INFORMATION SCIENCE</td>
+                </tr>
+                <tr>
+                    <td class="label">Stream</td>
+                    <td class="value">N/A</td>
+                </tr>
+                <tr>
+                    <td class="label">Semester</td>
+                    <td class="value">2</td>
+                </tr>
+                <tr>
+                    <td class="label">Serial Number</td>
+                    <td class="value">800125988</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
